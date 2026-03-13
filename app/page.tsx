@@ -1,65 +1,281 @@
-import Image from "next/image";
+'use client'
 
-export default function Home() {
+export default function Page() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main className="min-h-screen bg-slate-950 text-white">
+
+      {/* HEADER */}
+      <header className="border-b border-white/10 bg-slate-950">
+        <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+          <h1 className="text-xl font-semibold">EU Study Consultancy</h1>
+          <nav className="hidden md:flex gap-6 text-sm text-slate-300">
+            <a href="#services">Services</a>
+            <a href="#countries">Countries</a>
+            <a href="#process">Process</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      {/* HERO */}
+      <section className="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h2 className="text-4xl font-bold leading-tight">
+            Study in Europe
+            <br />
+            with Expert Guidance
+          </h2>
+
+          <p className="mt-6 text-slate-300">
+            We help students secure admission in top European universities
+            for Master's and higher studies. From university selection
+            to visa approval — we guide you through every step.
           </p>
+
+          <div className="mt-8 flex gap-4">
+            <a
+              href="#contact"
+              className="bg-cyan-400 text-black px-5 py-3 rounded-lg font-medium"
+            >
+              Free Consultation
+            </a>
+
+            <a
+              href="#services"
+              className="border border-white/20 px-5 py-3 rounded-lg"
+            >
+              Our Services
+            </a>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+
+        <div className="bg-white/5 border border-white/10 rounded-xl p-8">
+          <h3 className="text-lg font-semibold mb-4">Why Study in Europe?</h3>
+
+          <ul className="space-y-2 text-slate-300">
+            <li>✔ Affordable or free education</li>
+            <li>✔ English-taught Master's programs</li>
+            <li>✔ Global career opportunities</li>
+            <li>✔ Work opportunities during studies</li>
+            <li>✔ International exposure</li>
+          </ul>
+        </div>
+      </section>
+
+
+      {/* SERVICES */}
+      <section id="services" className="max-w-6xl mx-auto px-6 py-20">
+
+        <h2 className="text-3xl font-semibold mb-10">Our Services</h2>
+
+        <div className="grid md:grid-cols-3 gap-6">
+
+          {[
+            {
+              title: "University Selection",
+              text: "Shortlisting universities based on your profile and career goals."
+            },
+            {
+              title: "Application Support",
+              text: "Guidance for applications, CV, SOP, and required documents."
+            },
+            {
+              title: "Visa Assistance",
+              text: "Complete visa documentation and interview preparation."
+            },
+            {
+              title: "Scholarship Guidance",
+              text: "Support in identifying scholarships and funding opportunities."
+            },
+            {
+              title: "Accommodation Help",
+              text: "Guidance for student housing and relocation."
+            },
+            {
+              title: "Pre-Departure Support",
+              text: "Travel preparation and student life guidance."
+            }
+          ].map((service) => (
+            <div
+              key={service.title}
+              className="border border-white/10 bg-white/5 p-6 rounded-xl"
+            >
+              <h3 className="font-semibold">{service.title}</h3>
+              <p className="mt-2 text-sm text-slate-300">{service.text}</p>
+            </div>
+          ))}
+
+        </div>
+
+      </section>
+
+
+      {/* COUNTRIES */}
+      <section id="countries" className="bg-white/5 border-y border-white/10">
+
+        <div className="max-w-6xl mx-auto px-6 py-20">
+
+          <h2 className="text-3xl font-semibold mb-10">
+            Popular Study Destinations
+          </h2>
+
+          <div className="grid md:grid-cols-5 gap-6 text-center">
+
+            {[
+              "Germany",
+              "Portugal",
+              "Poland",
+              "France",
+              "Netherlands"
+            ].map((country) => (
+              <div
+                key={country}
+                className="border border-white/10 bg-slate-900/50 p-6 rounded-lg"
+              >
+                {country}
+              </div>
+            ))}
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* PROCESS */}
+      <section id="process" className="max-w-6xl mx-auto px-6 py-20">
+
+        <h2 className="text-3xl font-semibold mb-10">
+          Admission Process
+        </h2>
+
+        <div className="grid md:grid-cols-4 gap-6 text-sm">
+
+          <div className="bg-white/5 p-6 rounded-xl">
+            <h3 className="font-semibold">1. Profile Evaluation</h3>
+            <p className="mt-2 text-slate-300">
+              We evaluate your academic background.
+            </p>
+          </div>
+
+          <div className="bg-white/5 p-6 rounded-xl">
+            <h3 className="font-semibold">2. University Shortlisting</h3>
+            <p className="mt-2 text-slate-300">
+              Selecting universities suitable for your profile.
+            </p>
+          </div>
+
+          <div className="bg-white/5 p-6 rounded-xl">
+            <h3 className="font-semibold">3. Application Submission</h3>
+            <p className="mt-2 text-slate-300">
+              Preparing and submitting your applications.
+            </p>
+          </div>
+
+          <div className="bg-white/5 p-6 rounded-xl">
+            <h3 className="font-semibold">4. Visa & Travel</h3>
+            <p className="mt-2 text-slate-300">
+              Visa guidance until you reach Europe.
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+
+
+      {/* CONTACT FORM */}
+      <section id="contact" className="max-w-4xl mx-auto px-6 py-20">
+
+        <div className="border border-white/10 bg-white/5 rounded-xl p-8">
+
+          <h2 className="text-3xl font-semibold">Free Student Consultation</h2>
+
+          <p className="mt-2 text-slate-300">
+            Fill the form and our team will contact you.
+          </p>
+
+          <form
+            className="mt-8 grid gap-4"
+            onSubmit={async (e) => {
+
+              e.preventDefault()
+
+              const formData = new FormData(e.target as HTMLFormElement)
+
+              const data = {
+                name: formData.get("name"),
+                email: formData.get("email"),
+                country: formData.get("country"),
+                course: formData.get("course"),
+              }
+
+              await fetch("/api/lead", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json"
+                },
+                body: JSON.stringify(data)
+              })
+
+              alert("Your enquiry has been submitted!")
+            }}
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+
+            <input
+              name="name"
+              placeholder="Full Name"
+              className="p-3 rounded bg-slate-900 border border-white/10"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+            <input
+              name="email"
+              placeholder="Email"
+              className="p-3 rounded bg-slate-900 border border-white/10"
+            />
+
+            <input
+              name="country"
+              placeholder="Country"
+              className="p-3 rounded bg-slate-900 border border-white/10"
+            />
+
+            <input
+              name="course"
+              placeholder="Desired Course"
+              className="p-3 rounded bg-slate-900 border border-white/10"
+            />
+
+            <button
+              className="bg-cyan-400 text-black py-3 rounded font-medium"
+            >
+              Submit
+            </button>
+
+          </form>
+
         </div>
-      </main>
-    </div>
+
+      </section>
+
+
+      {/* FOOTER */}
+      <footer className="border-t border-white/10 py-6 text-center text-sm text-slate-400">
+        © 2026 EU Study Consultancy
+      </footer>
+
+
+      {/* WHATSAPP FLOATING BUTTON */}
+      <a
+        href="https://wa.me/918210022112"
+        target="_blank"
+        className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white px-5 py-3 rounded-full shadow-lg"
+      >
+        WhatsApp Chat
+      </a>
+
+    </main>
   );
 }
+
