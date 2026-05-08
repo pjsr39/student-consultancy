@@ -2,10 +2,10 @@
 
 export default function Page() {
   return (
-    <main className="min-h-screen bg-slate-950 text-white">
+    <main className="min-h-screen bg-white text-slate-900">
 
       {/* HEADER */}
-      <header className="sticky top-0 z-40 border-b border-white/10 bg-slate-950/90 backdrop-blur">
+      <header className="sticky top-0 z-40 border-b border-white/10 bg-white/90 backdrop-blur">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
           <h1 className="text-xl font-semibold">Masters Abroad Consultancy</h1>
 
@@ -399,7 +399,7 @@ export default function Page() {
       <a
         href="https://wa.me/918210022112"
         target="_blank"
-        className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white px-5 py-3 rounded-full shadow-lg"
+        className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-slate-900 px-5 py-3 rounded-full shadow-lg"
       >
         WhatsApp Chat
       </a>
