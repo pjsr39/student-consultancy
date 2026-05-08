@@ -79,10 +79,23 @@ export default function Page() {
       <section className="max-w-6xl mx-auto px-6 pb-16">
         <div className="grid md:grid-cols-3 gap-6">
           {[
-            {
-              title: "Choose the Right Program",
-              text: "Find Master&apos;s programs that match your academic profile and career goals."
-            },
+            [
+              {
+                title: "Choose the Right Program",
+                text: "Find Master's programs that match your academic profile and career goals.",
+                image: "/images/two_girls.jpg"
+              },
+              {
+                title: "Prepare Strong Documents",
+                text: "Improve your SOP, CV, and application documents before submission.",
+                image: "/images/onestudent_and_campus.jpg"
+              },
+              {
+                title: "Move Abroad Smoothly",
+                text: "Get guidance for visa, accommodation, travel, and student life.",
+                image: "/images/two_girls.jpg"
+              }
+            ]
             {
               title: "Prepare Strong Documents",
               text: "Improve your SOP, CV, and application documents before submission."
