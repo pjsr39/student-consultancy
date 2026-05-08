@@ -101,6 +101,16 @@ export default function Page() {
                 alt="Students planning courses"
                 className="h-40 w-full object-cover rounded-xl mb-5"
               />
+              <img
+                src="/images/onestudent_and_campus.jpg"
+                alt="Students planning courses"
+                className="h-40 w-full object-cover rounded-xl mb-5"
+              />
+             <img
+                src="/images/two_girls.jpg"
+                alt="Students planning courses"
+                className="h-40 w-full object-cover rounded-xl mb-5"
+              />
               <h3 className="text-lg font-semibold">{item.title}</h3>
               <p
                 className="mt-2 text-sm text-slate-600"
