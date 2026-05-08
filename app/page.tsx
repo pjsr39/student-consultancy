@@ -110,8 +110,8 @@ export default function Page() {
               className="bg-white border border-slate-200 rounded-2xl p-6"
             >
               <img
-                src="/images/two_girls.jpg"
-                alt="Students planning courses"
+                src={item.image}
+                alt={item.title}
                 className="h-40 w-full object-cover rounded-xl mb-5"
               />
               <h3 className="text-lg font-semibold">{item.title}</h3>
