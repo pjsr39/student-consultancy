@@ -90,7 +90,7 @@ export default function Page() {
               key={item.title}
               className="bg-white border border-slate-200 rounded-2xl p-6"
             >
-              <div className="h-40 bg-gradient-to-br from-cyan-400/20 to-blue-500/20 rounded-xl mb-5 flex items-center justify-center text-slate-600">
+              <div className="h-40 bg-cyan-500 rounded-xl mb-5 flex items-center justify-center text-white font-medium">
                 Add Photo Here
               </div>
               <h3 className="text-lg font-semibold">{item.title}</h3>
