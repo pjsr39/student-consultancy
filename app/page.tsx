@@ -96,9 +96,11 @@ export default function Page() {
               key={item.title}
               className="bg-white border border-slate-200 rounded-2xl p-6"
             >
-              <div className="h-40 bg-cyan-500 rounded-xl mb-5 flex items-center justify-center text-white font-medium">
-                Add Photo Here
-              </div>
+              <img
+                src="/images/two_girls.jpg"
+                alt="Students planning courses"
+                className="h-40 w-full object-cover rounded-xl mb-5"
+              />
               <h3 className="text-lg font-semibold">{item.title}</h3>
               <p
                 className="mt-2 text-sm text-slate-600"
