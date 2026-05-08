@@ -55,7 +55,7 @@ export default function Page() {
 
       <div className="relative">
         <img
-          src="/images/hero.jpg"
+          src="/images/students_and_campus.jpg"
           alt="Students studying abroad"
           className="w-full h-[500px] object-cover rounded-2xl shadow-xl"
         />
