@@ -79,30 +79,20 @@ export default function Page() {
       <section className="max-w-6xl mx-auto px-6 pb-16">
         <div className="grid md:grid-cols-3 gap-6">
           {[
-            [
-              {
-                title: "Choose the Right Program",
-                text: "Find Master's programs that match your academic profile and career goals.",
-                image: "/images/two_girls.jpg"
-              },
-              {
-                title: "Prepare Strong Documents",
-                text: "Improve your SOP, CV, and application documents before submission.",
-                image: "/images/onestudent_and_campus.jpg"
-              },
-              {
-                title: "Move Abroad Smoothly",
-                text: "Get guidance for visa, accommodation, travel, and student life.",
-                image: "/images/two_girls.jpg"
-              }
-            ]
+            {
+              title: "Choose the Right Program",
+              text: "Find Master's programs that match your academic profile and career goals.",
+              image: "/images/two_girls.jpg"
+            },
             {
               title: "Prepare Strong Documents",
-              text: "Improve your SOP, CV, and application documents before submission."
+              text: "Improve your SOP, CV, and application documents before submission.",
+              image: "/images/onestudent_and_campus.jpg"
             },
             {
               title: "Move Abroad Smoothly",
-              text: "Get guidance for visa, accommodation, travel, and student life."
+              text: "Get guidance for visa, accommodation, travel, and student life.",
+              image: "/images/students_and_campus.jpg"
             }
           ].map((item) => (
             <div
@@ -114,11 +104,12 @@ export default function Page() {
                 alt={item.title}
                 className="h-40 w-full object-cover rounded-xl mb-5"
               />
+      
               <h3 className="text-lg font-semibold">{item.title}</h3>
-              <p
-                className="mt-2 text-sm text-slate-600"
-                dangerouslySetInnerHTML={{ __html: item.text }}
-              />
+      
+              <p className="mt-2 text-sm text-slate-600">
+                {item.text}
+              </p>
             </div>
           ))}
         </div>
