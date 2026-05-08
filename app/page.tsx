@@ -53,20 +53,26 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8 shadow-xl">
-          <h3 className="text-xl font-semibold mb-4">
+      <div className="relative">
+        <img
+          src="/images/hero.jpg"
+          alt="Students studying abroad"
+          className="w-full h-[500px] object-cover rounded-2xl shadow-xl"
+        />
+      
+        <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur p-5 rounded-xl shadow-lg max-w-sm">
+          <h3 className="text-lg font-semibold mb-3">
             We help you with
           </h3>
-
-          <ul className="space-y-3 text-slate-600">
-            <li>✔ Country and university selection</li>
-            <li>✔ Master&apos;s course shortlisting</li>
-            <li>✔ SOP / motivation letter support</li>
-            <li>✔ CV and document preparation</li>
-            <li>✔ Scholarship and funding guidance</li>
-            <li>✔ Visa and pre-departure support</li>
+      
+          <ul className="space-y-2 text-sm text-slate-700">
+            <li>✔ University selection</li>
+            <li>✔ SOP & CV guidance</li>
+            <li>✔ Scholarship support</li>
+            <li>✔ Visa preparation</li>
           </ul>
         </div>
+      </div>
       </section>
 
       {/* IMAGE STRIP */}
