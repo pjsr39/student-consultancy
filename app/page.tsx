@@ -5,11 +5,11 @@ export default function Page() {
     <main className="min-h-screen bg-white text-slate-900">
 
       {/* HEADER */}
-      <header className="sticky top-0 z-40 border-b border-white/10 bg-white/90 backdrop-blur">
+      <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/90 backdrop-blur">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
           <h1 className="text-xl font-semibold">Masters Abroad Consultancy</h1>
 
-          <nav className="hidden md:flex gap-6 text-sm text-slate-300">
+          <nav className="hidden md:flex gap-6 text-sm text-slate-600">
             <a href="#services" className="hover:text-cyan-400">Services</a>
             <a href="#countries" className="hover:text-cyan-400">Countries</a>
             <a href="#process" className="hover:text-cyan-400">Process</a>
@@ -30,7 +30,7 @@ export default function Page() {
             Plan Your Master&apos;s Abroad With Confidence
           </h2>
 
-          <p className="mt-6 text-slate-300 text-lg">
+          <p className="mt-6 text-slate-600 text-lg">
             We guide students in choosing the right country, university,
             and Master&apos;s program, and support them through applications,
             SOP, CV, scholarships, visa preparation, and pre-arrival planning.
@@ -53,12 +53,12 @@ export default function Page() {
           </div>
         </div>
 
-        <div className="bg-white/5 border border-white/10 rounded-2xl p-8 shadow-xl">
+        <div className="bg-slate-50 border border-slate-200 rounded-2xl p-8 shadow-xl">
           <h3 className="text-xl font-semibold mb-4">
             We help you with
           </h3>
 
-          <ul className="space-y-3 text-slate-300">
+          <ul className="space-y-3 text-slate-600">
             <li>✔ Country and university selection</li>
             <li>✔ Master&apos;s course shortlisting</li>
             <li>✔ SOP / motivation letter support</li>
@@ -88,14 +88,14 @@ export default function Page() {
           ].map((item) => (
             <div
               key={item.title}
-              className="bg-slate-900 border border-white/10 rounded-2xl p-6"
+              className="bg-white border border-slate-200 rounded-2xl p-6"
             >
-              <div className="h-40 bg-gradient-to-br from-cyan-400/20 to-blue-500/20 rounded-xl mb-5 flex items-center justify-center text-slate-300">
+              <div className="h-40 bg-gradient-to-br from-cyan-400/20 to-blue-500/20 rounded-xl mb-5 flex items-center justify-center text-slate-600">
                 Add Photo Here
               </div>
               <h3 className="text-lg font-semibold">{item.title}</h3>
               <p
-                className="mt-2 text-sm text-slate-300"
+                className="mt-2 text-sm text-slate-600"
                 dangerouslySetInnerHTML={{ __html: item.text }}
               />
             </div>
@@ -151,17 +151,17 @@ export default function Page() {
           ].map((service) => (
             <div
               key={service.title}
-              className="border border-white/10 bg-white/5 hover:bg-white/10 transition p-6 rounded-xl"
+              className="border border-slate-200 bg-slate-50 hover:bg-white/10 transition p-6 rounded-xl"
             >
               <h3 className="font-semibold text-lg">{service.title}</h3>
-              <p className="mt-3 text-sm text-slate-300">{service.text}</p>
+              <p className="mt-3 text-sm text-slate-600">{service.text}</p>
             </div>
           ))}
         </div>
       </section>
 
       {/* COUNTRIES */}
-      <section id="countries" className="bg-white/5 border-y border-white/10">
+      <section id="countries" className="bg-slate-50 border-y border-slate-200">
         <div className="max-w-6xl mx-auto px-6 py-20">
           <p className="text-cyan-400 font-medium mb-2">Study Destinations</p>
 
@@ -169,7 +169,7 @@ export default function Page() {
             Countries We Guide For
           </h2>
 
-          <p className="text-slate-300 mb-10 max-w-3xl">
+          <p className="text-slate-600 mb-10 max-w-3xl">
             We focus on popular and affordable destinations for international
             Master&apos;s students, especially in Europe.
           </p>
@@ -184,7 +184,7 @@ export default function Page() {
             ].map((country) => (
               <div
                 key={country}
-                className="border border-white/10 bg-slate-900/70 p-6 rounded-xl font-medium hover:border-cyan-400 transition"
+                className="border border-slate-200 bg-white/70 p-6 rounded-xl font-medium hover:border-cyan-400 transition"
               >
                 {country}
               </div>
@@ -224,13 +224,13 @@ export default function Page() {
               text: "We guide you through visa preparation and pre-arrival steps."
             }
           ].map((item) => (
-            <div key={item.step} className="bg-white/5 border border-white/10 p-6 rounded-xl">
+            <div key={item.step} className="bg-slate-50 border border-slate-200 p-6 rounded-xl">
               <div className="w-10 h-10 rounded-full bg-cyan-400 text-black flex items-center justify-center font-bold mb-4">
                 {item.step}
               </div>
               <h3 className="font-semibold text-lg">{item.title}</h3>
               <p
-                className="mt-2 text-slate-300"
+                className="mt-2 text-slate-600"
                 dangerouslySetInnerHTML={{ __html: item.text }}
               />
             </div>
@@ -241,7 +241,7 @@ export default function Page() {
       {/* WHY CHOOSE US */}
       <section className="max-w-6xl mx-auto px-6 py-20">
         <div className="grid md:grid-cols-2 gap-10 items-center">
-          <div className="bg-gradient-to-br from-cyan-400/20 to-blue-500/20 rounded-2xl h-80 flex items-center justify-center text-slate-300 border border-white/10">
+          <div className="bg-gradient-to-br from-cyan-400/20 to-blue-500/20 rounded-2xl h-80 flex items-center justify-center text-slate-600 border border-slate-200">
             Add Student / University Photo Here
           </div>
 
@@ -251,13 +251,13 @@ export default function Page() {
               Practical Guidance for Serious Master&apos;s Applicants
             </h2>
 
-            <p className="text-slate-300 mb-6">
+            <p className="text-slate-600 mb-6">
               Applying for a Master&apos;s abroad can be confusing because every
               country, university, and program has different requirements. We
               simplify the process and help you avoid common mistakes.
             </p>
 
-            <ul className="space-y-3 text-slate-300">
+            <ul className="space-y-3 text-slate-600">
               <li>✔ Personalized guidance, not generic advice</li>
               <li>✔ Focus on suitable and realistic university options</li>
               <li>✔ Support for documents and application strategy</li>
@@ -268,7 +268,7 @@ export default function Page() {
       </section>
 
       {/* FAQ */}
-      <section id="faq" className="bg-white/5 border-y border-white/10">
+      <section id="faq" className="bg-slate-50 border-y border-slate-200">
         <div className="max-w-4xl mx-auto px-6 py-20">
           <p className="text-cyan-400 font-medium mb-2">FAQ</p>
 
@@ -295,13 +295,13 @@ export default function Page() {
                 a: "Ideally, students should start 8 to 12 months before the intended intake."
               }
             ].map((faq) => (
-              <div key={faq.q} className="bg-slate-900/70 border border-white/10 rounded-xl p-6">
+              <div key={faq.q} className="bg-white/70 border border-slate-200 rounded-xl p-6">
                 <h3
                   className="font-semibold"
                   dangerouslySetInnerHTML={{ __html: faq.q }}
                 />
                 <p
-                  className="mt-2 text-slate-300 text-sm"
+                  className="mt-2 text-slate-600 text-sm"
                   dangerouslySetInnerHTML={{ __html: faq.a }}
                 />
               </div>
@@ -312,14 +312,14 @@ export default function Page() {
 
       {/* CONTACT FORM */}
       <section id="contact" className="max-w-4xl mx-auto px-6 py-20">
-        <div className="border border-white/10 bg-white/5 rounded-2xl p-8">
+        <div className="border border-slate-200 bg-slate-50 rounded-2xl p-8">
           <p className="text-cyan-400 font-medium mb-2">Get Started</p>
 
           <h2 className="text-3xl font-semibold">
             Book a Free Student Consultation
           </h2>
 
-          <p className="mt-3 text-slate-300">
+          <p className="mt-3 text-slate-600">
             Fill the form and we will contact you to discuss your Master&apos;s
             abroad plan.
           </p>
@@ -354,7 +354,7 @@ export default function Page() {
               name="name"
               placeholder="Full Name"
               required
-              className="p-3 rounded bg-slate-900 border border-white/10"
+              className="p-3 rounded bg-white border border-slate-200"
             />
 
             <input
@@ -362,25 +362,25 @@ export default function Page() {
               type="email"
               placeholder="Email"
               required
-              className="p-3 rounded bg-slate-900 border border-white/10"
+              className="p-3 rounded bg-white border border-slate-200"
             />
 
             <input
               name="phone"
               placeholder="WhatsApp / Phone Number"
-              className="p-3 rounded bg-slate-900 border border-white/10"
+              className="p-3 rounded bg-white border border-slate-200"
             />
 
             <input
               name="country"
               placeholder="Preferred Country"
-              className="p-3 rounded bg-slate-900 border border-white/10"
+              className="p-3 rounded bg-white border border-slate-200"
             />
 
             <input
               name="course"
               placeholder="Desired Master&apos;s Course"
-              className="p-3 rounded bg-slate-900 border border-white/10"
+              className="p-3 rounded bg-white border border-slate-200"
             />
 
             <button className="bg-cyan-400 hover:bg-cyan-300 text-black py-3 rounded font-medium">
@@ -391,7 +391,7 @@ export default function Page() {
       </section>
 
       {/* FOOTER */}
-      <footer className="border-t border-white/10 py-6 text-center text-sm text-slate-400">
+      <footer className="border-t border-slate-200 py-6 text-center text-sm text-slate-400">
         © 2026 Masters Abroad Consultancy. All rights reserved.
       </footer>
 
