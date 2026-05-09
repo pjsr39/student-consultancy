@@ -27,25 +27,13 @@ export default function Page() {
       
         {/* LEFT CONTENT */}
         <div className="relative overflow-hidden bg-gradient-to-br from-[#eef6ff] via-[#f4f9ff] to-[#dbeafe] border border-slate-200 rounded-3xl p-6 shadow-xl hover:-translate-y-1 hover:shadow-2xl transition duration-300">
-        {/* Subtle Europe-style background */}
-        <div className="absolute inset-0 opacity-[0.10] pointer-events-none">
-        
-          {/* Right-side EU-style stars */}
-          <div className="absolute top-10 right-24 text-6xl text-sky-700">★</div>
-        
-          <div className="absolute top-1/2 right-10 text-7xl text-sky-700 -translate-y-1/2">
-            ★
-          </div>
-        
-          <div className="absolute bottom-8 right-28 text-6xl text-sky-700">
-            ★
-          </div>
-        
-          <div className="absolute bottom-24 right-64 text-5xl text-sky-700">
-            ★
-          </div>
-        
-        </div>
+          <img
+            src="/images/europe_bg.jpg"
+            alt="European campus background"
+            className="absolute inset-0 w-full h-full object-cover opacity-[0.16] pointer-events-none"
+          />
+
+        <div className="absolute inset-0 bg-white/75 pointer-events-none"></div>
         
         <div className="relative z-10">
           <p className="text-sky-600 font-semibold mb-3">
