@@ -87,7 +87,7 @@ export default function Page() {
             {
               title: "Prepare Strong Documents",
               text: "Improve your SOP, CV, and application documents before submission.",
-              image: "/images/prepare_strong_documents.jpg"
+              image: "/images/prepare_strong_documents.png"
             },
             {
               title: "Move Abroad Smoothly",
