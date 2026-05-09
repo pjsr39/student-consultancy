@@ -26,7 +26,7 @@ export default function Page() {
       <section className="max-w-[1700px] mx-auto px-8 py-10 grid md:grid-cols-2 gap-12 items-center">
       
         {/* LEFT CONTENT */}
-        <div className="bg-white border border-slate-200 rounded-3xl p-6 shadow-xl">
+        <div className="bg-white border border-slate-200 rounded-3xl p-6 shadow-xl hover:-translate-y-1 hover:shadow-2xl transition duration-300">
       
           <p className="text-cyan-500 font-semibold mb-3">
             Your international education partner
@@ -45,14 +45,14 @@ export default function Page() {
           <div className="mt-7 flex flex-wrap gap-4">
             <a
               href="#contact"
-              className="bg-cyan-400 hover:bg-cyan-300 text-black px-6 py-3 rounded-xl font-semibold shadow-md transition duration-300"
+              className="bg-cyan-400 hover:bg-cyan-300 hover:-translate-y-1 text-black px-6 py-3 rounded-xl font-semibold shadow-md transition duration-300"
             >
               Book Free Consultation
             </a>
       
             <a
               href="#services"
-              className="bg-cyan-400 hover:bg-cyan-300 text-black px-6 py-3 rounded-xl font-semibold shadow-md transition duration-300"
+              className="bg-cyan-400 hover:bg-cyan-300 hover:-translate-y-1 text-black px-6 py-3 rounded-xl font-semibold shadow-md transition duration-300"
             >
               Explore Services
             </a>
