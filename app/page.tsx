@@ -24,7 +24,7 @@ export default function Page() {
 
       {/* HERO */}
       <section className="bg-slate-100">
-        <div className="max-w-[1700px] mx-auto px-8 py-16 grid md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-[1700px] mx-auto px-8 py-10 grid md:grid-cols-2 gap-12 items-center">
       
           {/* LEFT CONTENT */}
           <div className="max-w-3xl">
