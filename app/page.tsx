@@ -32,7 +32,7 @@ export default function Page() {
               Your international education partner
             </p>
       
-            <h2 className="text-4xl md:text-[52px] font-extrabold leading-tight text-slate-900">
+            <h2 className="text-4xl md:text-[42px] font-extrabold leading-tight text-slate-900">
               Study Abroad Made Simple
             </h2>
       
@@ -71,7 +71,7 @@ export default function Page() {
             <img
               src="/images/students_and_campus.jpg"
               alt="Students studying abroad"
-              className="relative z-10 w-full max-w-[720px] h-[500px] object-cover rounded-3xl shadow-2xl"
+              className="relative z-10 w-full max-w-[720px] h-[420px] object-cover rounded-3xl shadow-2xl"
             />
           </div>
       
