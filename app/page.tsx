@@ -82,7 +82,7 @@ export default function Page() {
             {
               title: "Choose the Right Program",
               text: "Find Master's programs that match your academic profile and career goals.",
-              image: "/images/two_girls.jpg"
+              image: "/images/choose_the_right_program.jpg"
             },
             {
               title: "Prepare Strong Documents",
