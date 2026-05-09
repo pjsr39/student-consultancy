@@ -26,7 +26,7 @@ export default function Page() {
       <section className="max-w-[1700px] mx-auto px-8 py-10 grid md:grid-cols-2 gap-12 items-center">
       
         {/* LEFT CONTENT */}
-        <div className="relative overflow-hidden bg-gradient-to-br from-sky-50 via-white to-blue-50 border border-slate-200 rounded-3xl p-6 shadow-xl hover:-translate-y-1 hover:shadow-2xl transition duration-300">
+        <div className="relative overflow-hidden bg-gradient-to-br from-[#eef6ff] via-[#f4f9ff] to-[#dbeafe] border border-slate-200 rounded-3xl p-6 shadow-xl hover:-translate-y-1 hover:shadow-2xl transition duration-300">
         {/* Subtle Europe-style background */}
         <div className="absolute inset-0 opacity-[0.10] pointer-events-none">
         
