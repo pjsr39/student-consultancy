@@ -23,7 +23,7 @@ export default function Page() {
       <section className="max-w-[1700px] mx-auto px-8 py-10 grid md:grid-cols-2 gap-12 items-center">
       
         {/* LEFT CONTENT */}
-        <div className="bg-gradient-to-br from-cyan-50 via-white to-blue-50 border border-cyan-100 rounded-3xl p-6 shadow-lg">
+        <div className="bg-white border border-slate-200 rounded-3xl p-6 shadow-xl">
       
           <p className="text-cyan-500 font-semibold mb-3">
             Your international education partner
@@ -33,7 +33,7 @@ export default function Page() {
             Study Abroad Made Simple
           </h2>
       
-          <p className="mt-5 text-slate-600 text-lg leading-relaxed">
+          <p className="mt-5 text-slate-600 text-lg leading-relaxed max-w-2xl">
             We guide students in choosing the right country, university,
             and Master&apos;s program, and support them through applications,
             SOP, CV, scholarships, visa guidance, and pre-arrival planning.
@@ -56,9 +56,9 @@ export default function Page() {
           </div>
       
           <div className="mt-5 flex flex-wrap gap-4 text-sm text-slate-600">
-            <span>✔ Affordable Universities</span>
-            <span>✔ Scholarship Guidance</span>
-            <span>✔ Visa Assistance</span>
+            <span>✔ Europe-focused guidance</span>
+            <span>✔ Scholarship & SOP support</span>
+            <span>✔ Visa & relocation assistance</span>
           </div>
       
         </div>
@@ -179,7 +179,7 @@ export default function Page() {
           ].map((service) => (
             <div
               key={service.title}
-              className="border border-slate-200 bg-slate-50 hover:bg-white/10 transition p-6 rounded-xl"
+              className="border border-slate-200 bg-slate-50 p-6 rounded-xl hover:shadow-xl hover:-translate-y-1 transition duration-300"
             >
               <h3 className="font-semibold text-lg">{service.title}</h3>
               <p className="mt-3 text-sm text-slate-600">{service.text}</p>
@@ -212,7 +212,7 @@ export default function Page() {
             ].map((country) => (
               <div
                 key={country}
-                className="border border-slate-200 bg-white/70 p-6 rounded-xl font-medium hover:border-cyan-400 transition"
+                className="border border-slate-200 bg-white/70 p-6 rounded-xl font-medium hover:border-cyan-400 hover:shadow-lg hover:-translate-y-1 transition duration-300"
               >
                 {country}
               </div>
@@ -420,14 +420,14 @@ export default function Page() {
 
       {/* FOOTER */}
       <footer className="border-t border-slate-200 py-6 text-center text-sm text-slate-400">
-        © 2026 Masters Abroad Consultancy. All rights reserved.
+        © 2026 NextStep Abroad. All rights reserved.
       </footer>
 
       {/* WHATSAPP FLOATING BUTTON */}
       <a
         href="https://wa.me/918210022112"
         target="_blank"
-        className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-slate-900 px-5 py-3 rounded-full shadow-lg"
+        className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white text-sm px-4 py-2.5 rounded-full shadow-lg"
       >
         WhatsApp Chat
       </a>
