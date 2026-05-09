@@ -19,64 +19,46 @@ export default function Page() {
         </div>
       </header>
 
-      {/* HERO */}
-      <section className="max-w-[1500px] mx-auto px-8 py-16 grid md:grid-cols-2 gap-16 items-center">
+            {/* HERO */}
+      <section className="max-w-[1700px] mx-auto px-8 py-10 grid md:grid-cols-2 gap-12 items-center">
       
         {/* LEFT CONTENT */}
-        <div className="bg-gradient-to-br from-cyan-50 via-white to-blue-50 border border-cyan-100 rounded-3xl p-10 shadow-lg">
+        <div className="bg-gradient-to-br from-cyan-50 via-white to-blue-50 border border-cyan-100 rounded-3xl p-8 shadow-lg">
       
-          <p className="text-cyan-500 font-semibold mb-4 tracking-wide">
+          <p className="text-cyan-500 font-semibold mb-3">
             For students planning Master&apos;s abroad
           </p>
       
-          <h2 className="text-5xl md:text-6xl font-bold leading-tight text-slate-900">
+          <h2 className="text-4xl md:text-5xl font-bold leading-tight text-slate-900">
             Plan Your Master&apos;s Abroad With Confidence
           </h2>
       
-          <p className="mt-6 text-slate-600 text-xl leading-relaxed">
+          <p className="mt-5 text-slate-600 text-lg leading-relaxed">
             We guide students in choosing the right country, university,
             and Master&apos;s program, and support them through applications,
-            SOP preparation, CV building, scholarships, visa guidance,
-            and pre-arrival planning.
+            SOP, CV, scholarships, visa guidance, and pre-arrival planning.
           </p>
       
-          {/* BUTTONS */}
-          <div className="mt-10 flex flex-wrap gap-5">
-      
+          <div className="mt-7 flex flex-wrap gap-4">
             <a
               href="#contact"
-              className="bg-cyan-400 hover:bg-cyan-300 text-black px-7 py-4 rounded-xl font-semibold shadow-md transition duration-300"
+              className="bg-cyan-400 hover:bg-cyan-300 text-black px-6 py-3 rounded-xl font-semibold shadow-md transition duration-300"
             >
               Book Free Consultation
             </a>
       
             <a
               href="#services"
-              className="bg-cyan-400 hover:bg-cyan-300 text-black px-7 py-4 rounded-xl font-semibold shadow-md transition duration-300"
+              className="bg-cyan-400 hover:bg-cyan-300 text-black px-6 py-3 rounded-xl font-semibold shadow-md transition duration-300"
             >
               Explore Services
             </a>
-      
           </div>
       
-          {/* TRUST INDICATORS */}
-          <div className="mt-10 flex flex-wrap gap-6 text-sm text-slate-600">
-      
-            <div className="flex items-center gap-2">
-              <span className="text-cyan-500">✔</span>
-              Affordable European Universities
-            </div>
-      
-            <div className="flex items-center gap-2">
-              <span className="text-cyan-500">✔</span>
-              Scholarship Guidance
-            </div>
-      
-            <div className="flex items-center gap-2">
-              <span className="text-cyan-500">✔</span>
-              Visa Assistance
-            </div>
-      
+          <div className="mt-7 flex flex-wrap gap-4 text-sm text-slate-600">
+            <span>✔ Affordable Universities</span>
+            <span>✔ Scholarship Guidance</span>
+            <span>✔ Visa Assistance</span>
           </div>
       
         </div>
@@ -87,38 +69,20 @@ export default function Page() {
           <img
             src="/images/students_and_campus.jpg"
             alt="Students studying abroad"
-            className="w-full h-[650px] object-cover rounded-3xl shadow-2xl"
+            className="w-full h-[460px] object-cover rounded-3xl shadow-2xl"
           />
       
-          {/* FLOATING INFO CARD */}
-          <div className="absolute bottom-8 left-8 bg-white/95 backdrop-blur p-6 rounded-2xl shadow-2xl max-w-sm border border-slate-100">
+          <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur p-5 rounded-2xl shadow-2xl max-w-sm border border-slate-100">
       
-            <h3 className="text-xl font-semibold mb-4 text-slate-900">
+            <h3 className="text-lg font-semibold mb-3 text-slate-900">
               We help you with
             </h3>
       
-            <ul className="space-y-3 text-slate-700">
-      
-              <li className="flex items-center gap-2">
-                <span className="text-cyan-500">✔</span>
-                University selection
-              </li>
-      
-              <li className="flex items-center gap-2">
-                <span className="text-cyan-500">✔</span>
-                SOP & CV guidance
-              </li>
-      
-              <li className="flex items-center gap-2">
-                <span className="text-cyan-500">✔</span>
-                Scholarship support
-              </li>
-      
-              <li className="flex items-center gap-2">
-                <span className="text-cyan-500">✔</span>
-                Visa preparation
-              </li>
-      
+            <ul className="space-y-2 text-sm text-slate-700">
+              <li>✔ University selection</li>
+              <li>✔ SOP & CV guidance</li>
+              <li>✔ Scholarship support</li>
+              <li>✔ Visa preparation</li>
             </ul>
       
           </div>
