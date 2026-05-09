@@ -46,7 +46,7 @@ export default function Page() {
 
             <a
               href="#services"
-              className="border border-white/20 hover:border-cyan-400 px-6 py-3 rounded-lg"
+              className="bg-cyan-400 hover:bg-cyan-300 text-black px-6 py-3 rounded-lg font-medium"
             >
               Explore Services
             </a>
