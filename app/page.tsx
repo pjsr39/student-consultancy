@@ -97,7 +97,7 @@ export default function Page() {
           ].map((item) => (
             <div
               key={item.title}
-              className="bg-white border border-slate-200 rounded-2xl p-6"
+              className="bg-white border border-slate-200 rounded-2xl p-6 hover:shadow-xl hover:-translate-y-1 transition duration-300"
             >
               <img
                 src={item.image}
