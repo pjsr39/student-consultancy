@@ -52,7 +52,7 @@ export default function Page() {
       
             <a
               href="#services"
-              className="bg-white hover:bg-slate-50 border border-cyan-200 text-slate-800 px-7 py-4 rounded-xl font-semibold shadow-sm transition duration-300"
+              className="bg-cyan-400 hover:bg-cyan-300 text-black px-7 py-4 rounded-xl font-semibold shadow-md transition duration-300"
             >
               Explore Services
             </a>
