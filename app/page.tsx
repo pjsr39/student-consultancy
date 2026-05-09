@@ -95,7 +95,7 @@ export default function Page() {
           </div>
 
           {/* RIGHT SIDE CARD CAROUSEL */}
-          <div className="relative flex flex-col items-center justify-center h-[420px]">
+          <div className="relative flex flex-col items-center justify-center h-[470px]">
             <div className="bg-white border border-slate-200 rounded-3xl shadow-2xl p-6 w-full max-w-[560px] h-[410px] transition-all duration-700 overflow-hidden">
               <img
                 src={cards[activeCard].image}
