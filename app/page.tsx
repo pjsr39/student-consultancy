@@ -29,7 +29,7 @@ export default function Page() {
             For students planning Master&apos;s abroad
           </p>
       
-          <h2 className="text-4xl md:text-5xl font-bold leading-tight text-slate-900">
+          <h2 className="text-4xl md:text-[48px] font-bold leading-tight text-slate-900">
             Plan Your Master&apos;s Abroad With Confidence
           </h2>
       
@@ -55,7 +55,7 @@ export default function Page() {
             </a>
           </div>
       
-          <div className="mt-7 flex flex-wrap gap-4 text-sm text-slate-600">
+          <div className="mt-5 flex flex-wrap gap-4 text-sm text-slate-600">
             <span>✔ Affordable Universities</span>
             <span>✔ Scholarship Guidance</span>
             <span>✔ Visa Assistance</span>
@@ -69,7 +69,7 @@ export default function Page() {
           <img
             src="/images/students_and_campus.jpg"
             alt="Students studying abroad"
-            className="w-full h-[460px] object-cover rounded-3xl shadow-2xl"
+            className="w-full h-[420px] object-cover rounded-3xl shadow-2xl"
           />
       
           <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur p-5 rounded-2xl shadow-2xl max-w-sm border border-slate-100">
