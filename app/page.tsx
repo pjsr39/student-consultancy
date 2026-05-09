@@ -87,12 +87,12 @@ export default function Page() {
             {
               title: "Prepare Strong Documents",
               text: "Improve your SOP, CV, and application documents before submission.",
-              image: "/images/onestudent_and_campus.jpg"
+              image: "/images/prepare_strong_documents.jpg"
             },
             {
               title: "Move Abroad Smoothly",
               text: "Get guidance for visa, accommodation, travel, and student life.",
-              image: "/images/students_and_campus.jpg"
+              image: "/images/move_abroad_smoothly.jpg"
             }
           ].map((item) => (
             <div
