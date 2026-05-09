@@ -22,88 +22,60 @@ export default function Page() {
         </div>
       </header>
 
-            {/* HERO */}
-      <section className="max-w-[1700px] mx-auto px-8 py-10 grid md:grid-cols-2 gap-12 items-center">
+      {/* HERO */}
+      <section className="bg-slate-100">
+        <div className="max-w-[1700px] mx-auto px-8 py-16 grid md:grid-cols-2 gap-12 items-center">
       
-        {/* LEFT CONTENT */}
-        {/*
-        <div className="relative overflow-hidden bg-gradient-to-br from-[#eef6ff] via-[#f4f9ff] to-[#dbeafe] border border-slate-200 rounded-3xl p-6 shadow-xl hover:-translate-y-1 hover:shadow-2xl transition duration-300">
-        */}
-          <div className="relative overflow-hidden bg-white border border-slate-200 rounded-3xl p-6 shadow-xl hover:-translate-y-1 hover:shadow-2xl transition duration-300">
-          {/*
-          <img
-            src="/images/college_campus.jpg"
-            alt="European campus background"
-            className="absolute inset-0 w-full h-full object-cover opacity-[0.50] pointer-events-none"
-          />
-        */}
-        <div className="absolute inset-0 bg-white/55 pointer-events-none"></div>
-        
-        <div className="relative z-10">
-          <p className="text-sky-600 font-semibold mb-3">
-            Your international education partner
-          </p>
+          {/* LEFT CONTENT */}
+          <div className="max-w-3xl">
+            <p className="text-sky-600 font-semibold mb-4">
+              Your international education partner
+            </p>
       
-          <h2 className="text-4xl md:text-[36px] font-bold leading-tight text-slate-900">
-            Study Abroad Made Simple
-          </h2>
+            <h2 className="text-4xl md:text-[52px] font-extrabold leading-tight text-slate-900">
+              Study Abroad Made Simple
+            </h2>
       
-          <p className="mt-5 text-slate-600 text-lg leading-relaxed max-w-2xl">
-            We guide students in choosing the right country, university,
-            and Master&apos;s program, and support them through applications,
-            SOP, CV, scholarships, visa guidance, and pre-arrival planning.
-          </p>
+            <p className="mt-6 text-slate-700 text-xl leading-relaxed">
+              Get expert guidance for university shortlisting, Master&apos;s applications,
+              SOP, CV, scholarships, visa preparation, and your smooth move abroad.
+            </p>
       
-          <div className="mt-7 flex flex-wrap gap-4">
-            <a
-              href="#contact"
-              className="bg-sky-500 hover:bg-sky-400 hover:-translate-y-1 text-black px-6 py-3 rounded-xl font-semibold shadow-md transition duration-300"
-            >
-              Book Free Consultation
-            </a>
+            <div className="mt-8 flex flex-wrap gap-4">
+              <a
+                href="#contact"
+                className="bg-sky-600 hover:bg-sky-500 text-white px-7 py-4 rounded-full font-semibold shadow-md transition duration-300"
+              >
+                Book Free Consultation
+              </a>
       
-            <a
-              href="#services"
-              className="bg-sky-500 hover:bg-sky-400 hover:-translate-y-1 text-black px-6 py-3 rounded-xl font-semibold shadow-md transition duration-300"
-            >
-              Explore Services
-            </a>
+              <a
+                href="#services"
+                className="bg-white hover:bg-slate-50 text-slate-900 border border-slate-300 px-7 py-4 rounded-full font-semibold shadow-sm transition duration-300"
+              >
+                Explore Services
+              </a>
+            </div>
+      
+            <div className="mt-8 flex flex-wrap gap-5 text-sm text-slate-600">
+              <span>✔ Europe-focused guidance</span>
+              <span>✔ Scholarship & SOP support</span>
+              <span>✔ Visa & relocation assistance</span>
+            </div>
           </div>
       
-          <div className="mt-5 flex flex-wrap gap-4 text-sm text-slate-600">
-            <span>✔ Europe-focused guidance</span>
-            <span>✔ Scholarship & SOP support</span>
-            <span>✔ Visa & relocation assistance</span>
-          </div>
-        </div>
-        </div>
+          {/* RIGHT IMAGE */}
+          <div className="relative flex justify-end">
+            <div className="absolute right-0 top-6 w-[70%] h-[80%] bg-sky-500 rounded-l-[120px] rounded-tr-[40px]"></div>
       
-        {/* RIGHT IMAGE */}
-        <div className="relative">
-      
-          <img
-            src="/images/students_and_campus.jpg"
-            alt="Students studying abroad"
-            className="w-full h-[420px] object-cover rounded-3xl shadow-2xl hover:scale-[1.02] transition duration-500"
-          />
-      
-          <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur p-5 rounded-2xl shadow-2xl max-w-sm border border-slate-100">
-      
-            <h3 className="text-lg font-semibold mb-3 text-slate-900">
-              We help you with
-            </h3>
-      
-            <ul className="space-y-2 text-sm text-slate-700">
-              <li>✔ University selection</li>
-              <li>✔ SOP & CV guidance</li>
-              <li>✔ Scholarship support</li>
-              <li>✔ Visa preparation</li>
-            </ul>
-      
+            <img
+              src="/images/students_and_campus.jpg"
+              alt="Students studying abroad"
+              className="relative z-10 w-full max-w-[720px] h-[500px] object-cover rounded-3xl shadow-2xl"
+            />
           </div>
       
         </div>
-      
       </section>
 
       {/* IMAGE STRIP */}
