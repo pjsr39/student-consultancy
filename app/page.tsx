@@ -32,7 +32,7 @@ export default function Page() {
             Your international education partner
           </p>
       
-          <h2 className="text-4xl md:text-[40px] font-bold leading-tight text-slate-900">
+          <h2 className="text-4xl md:text-[36px] font-bold leading-tight text-slate-900">
             Study Abroad Made Simple
           </h2>
       
