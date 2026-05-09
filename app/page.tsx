@@ -117,7 +117,7 @@ const [isHovered, setIsHovered] = useState(false)
                 </p>
               </div>
             </div>
-            {/* DOTS */}
+            
             {/* DOTS */}
           <div
             className="mt-6 flex gap-3"
@@ -140,59 +140,72 @@ const [isHovered, setIsHovered] = useState(false)
 
         </div>
       </section>
-
-      {/* SERVICES */}
-      <section id="services" className="max-w-[1500px] mx-auto px-6 py-14">
-        <p className="text-sky-600 font-medium mb-2">Our Services</p>
-        <h2 className="text-3xl font-semibold mb-10">
+      
+          {/* SERVICES */}
+      <section id="services" className="max-w-[1500px] mx-auto px-6 py-16">
+        <p className="text-sky-600 font-semibold mb-3">Our Services</p>
+      
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">
           Complete Support for Your Master&apos;s Application
         </h2>
-
-        <div className="grid md:grid-cols-3 gap-6">
+      
+        <p className="text-slate-600 max-w-3xl mb-14 text-lg">
+          From choosing the right university to preparing documents and moving abroad,
+          we guide you through every important step.
+        </p>
+      
+        <div className="grid md:grid-cols-3 gap-8">
           {[
             {
-              title: "Profile Evaluation",
-              text: "We assess your academic background, CGPA, experience, English level, and career goals."
+              icon: "🎓",
+              title: "Profile & University Strategy",
+              text: "We evaluate your academic profile, career goals, budget, and preferences to shortlist suitable universities and Master&apos;s programs."
             },
             {
-              title: "University Shortlisting",
-              text: "We shortlist suitable universities based on your profile, budget, and preferred country."
-            },
-            {
+              icon: "📚",
               title: "Course Selection",
-              text: "We help you choose Master&apos;s programs aligned with your future career plans."
+              text: "We help you choose programs that match your background, interests, future job goals, and country preferences."
             },
             {
+              icon: "📝",
               title: "SOP & Motivation Letter",
-              text: "We help you prepare a clear and convincing statement of purpose or motivation letter."
+              text: "We help you prepare a clear, convincing, and personalized SOP or motivation letter for your applications."
             },
             {
-              title: "CV Review",
-              text: "We improve your academic CV for international university applications."
+              icon: "📄",
+              title: "CV & Document Review",
+              text: "We improve your academic CV and check your application documents before submission."
             },
             {
-              title: "Application Support",
-              text: "We guide you through online applications, document uploads, and submission deadlines."
-            },
-            {
+              icon: "💰",
               title: "Scholarship Guidance",
-              text: "We help identify scholarships, tuition waivers, and funding opportunities."
+              text: "We help identify scholarships, tuition waivers, and funding opportunities suitable for your profile."
             },
             {
-              title: "Visa Guidance",
-              text: "We support you with visa documents, appointment preparation, and interview guidance."
-            },
-            {
-              title: "Pre-Arrival Support",
-              text: "We guide you with accommodation, travel, packing, and settling into student life abroad."
+              icon: "✈️",
+              title: "Visa & Pre-Arrival Support",
+              text: "We guide you with visa documents, interview preparation, accommodation, travel, and settling abroad."
             }
-          ].map((service) => (
+          ].map((service, index) => (
             <div
               key={service.title}
-              className="border border-slate-200 bg-slate-50 p-6 rounded-xl hover:shadow-xl hover:-translate-y-1 transition duration-300"
+              style={{ animationDelay: `${index * 100}ms` }}
+              className="bg-white border border-slate-200 p-8 rounded-2xl min-h-[260px] shadow-sm hover:shadow-2xl hover:shadow-sky-100 hover:border-sky-300 hover:-translate-y-2 transition duration-300"
             >
-              <h3 className="font-semibold text-lg">{service.title}</h3>
-              <p className="mt-3 text-sm text-slate-600">{service.text}</p>
+              <div className="w-16 h-1 bg-sky-500 rounded-full mb-6"></div>
+      
+              <div className="text-4xl mb-5">
+                {service.icon}
+              </div>
+      
+              <h3 className="font-bold text-xl text-slate-900">
+                {service.title}
+              </h3>
+      
+              <p
+                className="mt-4 text-slate-600 leading-relaxed"
+                dangerouslySetInnerHTML={{ __html: service.text }}
+              />
             </div>
           ))}
         </div>
