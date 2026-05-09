@@ -28,12 +28,23 @@ export default function Page() {
         {/* LEFT CONTENT */}
         <div className="relative overflow-hidden bg-gradient-to-br from-sky-50 via-white to-blue-50 border border-slate-200 rounded-3xl p-6 shadow-xl hover:-translate-y-1 hover:shadow-2xl transition duration-300">
         {/* Subtle Europe-style background */}
-        <div className="absolute inset-0 opacity-[0.20] pointer-events-none">
-          <div className="absolute top-8 left-16 text-6xl text-sky-700">★</div>
-          <div className="absolute top-20 right-24 text-5xl text-sky-700">★</div>
-          <div className="absolute bottom-16 left-40 text-4xl text-sky-700">★</div>
-          <div className="absolute bottom-10 right-16 text-6xl text-sky-700">★</div>
-          <div className="absolute top-1/2 left-1/2 text-7xl text-sky-700 -translate-x-1/2 -translate-y-1/2">★</div>
+        <div className="absolute inset-0 opacity-[0.10] pointer-events-none">
+        
+          {/* Right-side EU-style stars */}
+          <div className="absolute top-10 right-24 text-6xl text-sky-700">★</div>
+        
+          <div className="absolute top-1/2 right-10 text-7xl text-sky-700 -translate-y-1/2">
+            ★
+          </div>
+        
+          <div className="absolute bottom-8 right-28 text-6xl text-sky-700">
+            ★
+          </div>
+        
+          <div className="absolute bottom-24 right-64 text-5xl text-sky-700">
+            ★
+          </div>
+        
         </div>
         
         <div className="relative z-10">
