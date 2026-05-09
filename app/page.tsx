@@ -28,7 +28,7 @@ export default function Page() {
         {/* LEFT CONTENT */}
         <div className="relative overflow-hidden bg-gradient-to-br from-sky-50 via-white to-blue-50 border border-slate-200 rounded-3xl p-6 shadow-xl hover:-translate-y-1 hover:shadow-2xl transition duration-300">
         {/* Subtle Europe-style background */}
-        <div className="absolute inset-0 opacity-[0.05] pointer-events-none">
+        <div className="absolute inset-0 opacity-[0.12] pointer-events-none">
           <div className="absolute top-8 left-16 text-6xl text-sky-700">★</div>
           <div className="absolute top-20 right-24 text-5xl text-sky-700">★</div>
           <div className="absolute bottom-16 left-40 text-4xl text-sky-700">★</div>
