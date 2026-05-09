@@ -13,11 +13,11 @@ export default function Page() {
           </h1>
 
           <nav className="hidden md:flex gap-6 text-sm text-slate-600">
-            <a href="#services" className="hover:text-cyan-400">Services</a>
-            <a href="#countries" className="hover:text-cyan-400">Countries</a>
-            <a href="#process" className="hover:text-cyan-400">Process</a>
-            <a href="#faq" className="hover:text-cyan-400">FAQ</a>
-            <a href="#contact" className="hover:text-cyan-400">Contact</a>
+            <a href="#services" className="hover:text-sky-500">Services</a>
+            <a href="#countries" className="hover:text-sky-500">Countries</a>
+            <a href="#process" className="hover:text-sky-500">Process</a>
+            <a href="#faq" className="hover:text-sky-500">FAQ</a>
+            <a href="#contact" className="hover:text-sky-500">Contact</a>
           </nav>
         </div>
       </header>
@@ -26,8 +26,17 @@ export default function Page() {
       <section className="max-w-[1700px] mx-auto px-8 py-10 grid md:grid-cols-2 gap-12 items-center">
       
         {/* LEFT CONTENT */}
-        <div className="bg-white border border-slate-200 rounded-3xl p-6 shadow-xl hover:-translate-y-1 hover:shadow-2xl transition duration-300">
-      
+        <div className="relative overflow-hidden bg-gradient-to-br from-sky-50 via-white to-blue-50 border border-slate-200 rounded-3xl p-6 shadow-xl hover:-translate-y-1 hover:shadow-2xl transition duration-300">
+        {/* Subtle Europe-style background */}
+        <div className="absolute inset-0 opacity-[0.05] pointer-events-none">
+          <div className="absolute top-8 left-16 text-6xl text-sky-700">★</div>
+          <div className="absolute top-20 right-24 text-5xl text-sky-700">★</div>
+          <div className="absolute bottom-16 left-40 text-4xl text-sky-700">★</div>
+          <div className="absolute bottom-10 right-16 text-6xl text-sky-700">★</div>
+          <div className="absolute top-1/2 left-1/2 text-7xl text-sky-700 -translate-x-1/2 -translate-y-1/2">★</div>
+        </div>
+        
+        <div className="relative z-10">
           <p className="text-sky-600 font-semibold mb-3">
             Your international education partner
           </p>
@@ -63,7 +72,7 @@ export default function Page() {
             <span>✔ Scholarship & SOP support</span>
             <span>✔ Visa & relocation assistance</span>
           </div>
-      
+        </div>
         </div>
       
         {/* RIGHT IMAGE */}
@@ -136,7 +145,7 @@ export default function Page() {
 
       {/* SERVICES */}
       <section id="services" className="max-w-[1500px] mx-auto px-6 py-14">
-        <p className="text-cyan-400 font-medium mb-2">Our Services</p>
+        <p className="text-sky-600 font-medium mb-2">Our Services</p>
         <h2 className="text-3xl font-semibold mb-10">
           Complete Support for Your Master&apos;s Application
         </h2>
@@ -194,7 +203,7 @@ export default function Page() {
       {/* COUNTRIES */}
       <section id="countries" className="bg-slate-50 border-y border-slate-200">
         <div className="max-w-[1500px] mx-auto px-6 py-14">
-          <p className="text-cyan-400 font-medium mb-2">Study Destinations</p>
+          <p className="text-sky-600 font-medium mb-2">Study Destinations</p>
 
           <h2 className="text-3xl font-semibold mb-4">
             Countries We Guide For
@@ -215,7 +224,7 @@ export default function Page() {
             ].map((country) => (
               <div
                 key={country}
-                className="border border-slate-200 bg-white/70 p-6 rounded-xl font-medium hover:border-cyan-400 hover:shadow-lg hover:-translate-y-1 transition duration-300"
+                className="border border-slate-200 bg-white/70 p-6 rounded-xl font-medium hover:border-sky-500 hover:shadow-lg hover:-translate-y-1 transition duration-300"
               >
                 {country}
               </div>
@@ -226,7 +235,7 @@ export default function Page() {
 
       {/* PROCESS */}
       <section id="process" className="max-w-[1500px] mx-auto px-6 py-14">
-        <p className="text-cyan-400 font-medium mb-2">Step-by-Step Process</p>
+        <p className="text-sky-600 font-medium mb-2">Step-by-Step Process</p>
 
         <h2 className="text-3xl font-semibold mb-10">
           From Planning to Arrival
@@ -272,12 +281,12 @@ export default function Page() {
       {/* WHY CHOOSE US */}
       <section className="max-w-[1500px] mx-auto px-6 py-14">
         <div className="grid md:grid-cols-2 gap-10 items-center">
-          <div className="bg-gradient-to-br from-cyan-400/20 to-blue-500/20 rounded-2xl h-80 flex items-center justify-center text-slate-600 border border-slate-200">
+          <div className="bg-gradient-to-br from-sky-400/20 to-blue-500/20 rounded-2xl h-80 flex items-center justify-center text-slate-600 border border-slate-200">
             Add Student / University Photo Here
           </div>
 
           <div>
-            <p className="text-cyan-400 font-medium mb-2">Why Choose Us?</p>
+            <p className="text-sky-600 font-medium mb-2">Why Choose Us?</p>
             <h2 className="text-3xl font-semibold mb-6">
               Practical Guidance for Serious Master&apos;s Applicants
             </h2>
@@ -301,7 +310,7 @@ export default function Page() {
       {/* FAQ */}
       <section id="faq" className="bg-slate-50 border-y border-slate-200">
         <div className="max-w-4xl mx-auto px-6 py-14">
-          <p className="text-cyan-400 font-medium mb-2">FAQ</p>
+          <p className="text-sky-600 font-medium mb-2">FAQ</p>
 
           <h2 className="text-3xl font-semibold mb-10">
             Common Questions
@@ -344,7 +353,7 @@ export default function Page() {
       {/* CONTACT FORM */}
       <section id="contact" className="max-w-4xl mx-auto px-6 py-14">
         <div className="border border-slate-200 bg-slate-50 rounded-2xl p-8">
-          <p className="text-cyan-400 font-medium mb-2">Get Started</p>
+          <p className="text-sky-600 font-medium mb-2">Get Started</p>
 
           <h2 className="text-3xl font-semibold">
             Book a Free Student Consultation
