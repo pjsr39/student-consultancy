@@ -28,7 +28,7 @@ export default function Page() {
         {/* LEFT CONTENT */}
         <div className="relative overflow-hidden bg-gradient-to-br from-[#eef6ff] via-[#f4f9ff] to-[#dbeafe] border border-slate-200 rounded-3xl p-6 shadow-xl hover:-translate-y-1 hover:shadow-2xl transition duration-300">
           <img
-            src="/images/europe_bg.jpg"
+            src="/images/college_campus.jpg"
             alt="European campus background"
             className="absolute inset-0 w-full h-full object-cover opacity-[0.16] pointer-events-none"
           />
