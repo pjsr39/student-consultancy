@@ -9,7 +9,7 @@ export default function Page() {
         <div className="max-w-[1500px] mx-auto px-6 py-4 flex justify-between items-center">
           <h1 className="text-2xl font-extrabold tracking-tight">
             <span className="text-slate-900">NextStep</span>
-            <span className="text-cyan-500"> Abroad</span>
+            <span className="text-sky-600"> Abroad</span>
           </h1>
 
           <nav className="hidden md:flex gap-6 text-sm text-slate-600">
@@ -28,7 +28,7 @@ export default function Page() {
         {/* LEFT CONTENT */}
         <div className="bg-white border border-slate-200 rounded-3xl p-6 shadow-xl hover:-translate-y-1 hover:shadow-2xl transition duration-300">
       
-          <p className="text-cyan-500 font-semibold mb-3">
+          <p className="text-sky-600 font-semibold mb-3">
             Your international education partner
           </p>
       
@@ -45,14 +45,14 @@ export default function Page() {
           <div className="mt-7 flex flex-wrap gap-4">
             <a
               href="#contact"
-              className="bg-cyan-400 hover:bg-cyan-300 hover:-translate-y-1 text-black px-6 py-3 rounded-xl font-semibold shadow-md transition duration-300"
+              className="bg-sky-500 hover:bg-sky-400 hover:-translate-y-1 text-black px-6 py-3 rounded-xl font-semibold shadow-md transition duration-300"
             >
               Book Free Consultation
             </a>
       
             <a
               href="#services"
-              className="bg-cyan-400 hover:bg-cyan-300 hover:-translate-y-1 text-black px-6 py-3 rounded-xl font-semibold shadow-md transition duration-300"
+              className="bg-sky-500 hover:bg-sky-400 hover:-translate-y-1 text-black px-6 py-3 rounded-xl font-semibold shadow-md transition duration-300"
             >
               Explore Services
             </a>
@@ -256,7 +256,7 @@ export default function Page() {
             }
           ].map((item) => (
             <div key={item.step} className="bg-slate-50 border border-slate-200 p-6 rounded-xl">
-              <div className="w-10 h-10 rounded-full bg-cyan-400 text-black flex items-center justify-center font-bold mb-4">
+              <div className="w-10 h-10 rounded-full bg-sky-500 text-black flex items-center justify-center font-bold mb-4">
                 {item.step}
               </div>
               <h3 className="font-semibold text-lg">{item.title}</h3>
@@ -414,7 +414,7 @@ export default function Page() {
               className="p-3 rounded bg-white border border-slate-200"
             />
 
-            <button className="bg-cyan-400 hover:bg-cyan-300 text-black py-3 rounded font-medium">
+            <button className="bg-sky-500 hover:bg-sky-400 text-black py-3 rounded font-medium">
               Submit Enquiry
             </button>
           </form>
