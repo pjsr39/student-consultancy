@@ -7,7 +7,7 @@ export default function Page() {
       {/* HEADER */}
       <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/90 backdrop-blur">
         <div className="max-w-[1500px] mx-auto px-6 py-4 flex justify-between items-center">
-          <h1 className="text-xl font-semibold">Masters Abroad Consultancy</h1>
+          <h1 className="text-xl font-semibold">NextStep Abroad</h1>
 
           <nav className="hidden md:flex gap-6 text-sm text-slate-600">
             <a href="#services" className="hover:text-cyan-400">Services</a>
