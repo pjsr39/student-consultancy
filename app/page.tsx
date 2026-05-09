@@ -23,7 +23,7 @@ export default function Page() {
       <section className="max-w-[1700px] mx-auto px-8 py-10 grid md:grid-cols-2 gap-12 items-center">
       
         {/* LEFT CONTENT */}
-        <div className="bg-gradient-to-br from-cyan-50 via-white to-blue-50 border border-cyan-100 rounded-3xl p-8 shadow-lg">
+        <div className="bg-gradient-to-br from-cyan-50 via-white to-blue-50 border border-cyan-100 rounded-3xl p-6 shadow-lg">
       
           <p className="text-cyan-500 font-semibold mb-3">
             For students planning Master&apos;s abroad
