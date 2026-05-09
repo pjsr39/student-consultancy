@@ -6,7 +6,7 @@ export default function Page() {
 
       {/* HEADER */}
       <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/90 backdrop-blur">
-        <div className="max-w-[1400px] mx-auto px-6 py-4 flex justify-between items-center">
+        <div className="max-w-[1700px] mx-auto px-6 py-4 flex justify-between items-center">
           <h1 className="text-xl font-semibold">Masters Abroad Consultancy</h1>
 
           <nav className="hidden md:flex gap-6 text-sm text-slate-600">
@@ -20,7 +20,7 @@ export default function Page() {
       </header>
 
       {/* HERO */}
-      <section className="max-w-[1400px] mx-auto px-6 py-14 grid md:grid-cols-2 gap-12 items-center">
+      <section className="max-w-[1700px] mx-auto px-6 py-14 grid md:grid-cols-2 gap-12 items-center">
         <div>
           <p className="text-cyan-400 font-medium mb-3">
             For students planning Master&apos;s abroad
@@ -76,7 +76,7 @@ export default function Page() {
       </section>
 
       {/* IMAGE STRIP */}
-      <section className="max-w-[1400px] mx-auto px-6 pb-16">
+      <section className="max-w-[1700px] mx-auto px-6 pb-16">
         <div className="grid md:grid-cols-3 gap-6">
           {[
             {
@@ -116,7 +116,7 @@ export default function Page() {
       </section>
 
       {/* SERVICES */}
-      <section id="services" className="max-w-[1400px] mx-auto px-6 py-14">
+      <section id="services" className="max-w-[1700px] mx-auto px-6 py-14">
         <p className="text-cyan-400 font-medium mb-2">Our Services</p>
         <h2 className="text-3xl font-semibold mb-10">
           Complete Support for Your Master&apos;s Application
@@ -174,7 +174,7 @@ export default function Page() {
 
       {/* COUNTRIES */}
       <section id="countries" className="bg-slate-50 border-y border-slate-200">
-        <div className="max-w-[1400px] mx-auto px-6 py-14">
+        <div className="max-w-[1700px] mx-auto px-6 py-14">
           <p className="text-cyan-400 font-medium mb-2">Study Destinations</p>
 
           <h2 className="text-3xl font-semibold mb-4">
@@ -206,7 +206,7 @@ export default function Page() {
       </section>
 
       {/* PROCESS */}
-      <section id="process" className="max-w-[1400px] mx-auto px-6 py-14">
+      <section id="process" className="max-w-[1700px] mx-auto px-6 py-14">
         <p className="text-cyan-400 font-medium mb-2">Step-by-Step Process</p>
 
         <h2 className="text-3xl font-semibold mb-10">
@@ -251,7 +251,7 @@ export default function Page() {
       </section>
 
       {/* WHY CHOOSE US */}
-      <section className="max-w-[1400px] mx-auto px-6 py-14">
+      <section className="max-w-[1700px] mx-auto px-6 py-14">
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div className="bg-gradient-to-br from-cyan-400/20 to-blue-500/20 rounded-2xl h-80 flex items-center justify-center text-slate-600 border border-slate-200">
             Add Student / University Photo Here
