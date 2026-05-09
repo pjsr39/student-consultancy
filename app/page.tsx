@@ -23,13 +23,17 @@ export default function Page() {
 
   const [activeCard, setActiveCard] = useState(0)
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setActiveCard((prev) => (prev + 1) % cards.length)
-    }, 2000)
+const [isHovered, setIsHovered] = useState(false)
 
-    return () => clearInterval(timer)
-  }, [cards.length])
+    useEffect(() => {
+      if (isHovered) return
+    
+      const timer = setInterval(() => {
+        setActiveCard((prev) => (prev + 1) % cards.length)
+      }, 2000)
+    
+      return () => clearInterval(timer)
+    }, [cards.length, isHovered])
 
   return (
     <main className="min-h-screen bg-white text-slate-900">
@@ -114,17 +118,24 @@ export default function Page() {
               </div>
             </div>
             {/* DOTS */}
-            <div className="mt-6 flex gap-3">
-              {cards.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setActiveCard(index)}
-                  className={`w-3 h-3 rounded-full transition duration-300 ${
-                    activeCard === index ? "bg-sky-600 scale-125" : "bg-slate-300"
-                  }`}
-                />
-              ))}
-            </div>
+            {/* DOTS */}
+          <div
+            className="mt-6 flex gap-3"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
+            {cards.map((_, index) => (
+              <button
+                key={index}
+                onMouseEnter={() => setActiveCard(index)}
+                className={`w-3 h-3 rounded-full cursor-pointer transition duration-300 ${
+                  activeCard === index
+                    ? "bg-sky-600 scale-125"
+                    : "bg-slate-300 hover:bg-slate-400"
+                }`}
+              />
+            ))}
+          </div>
           </div>
 
         </div>
