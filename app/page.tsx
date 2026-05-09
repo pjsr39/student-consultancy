@@ -72,7 +72,7 @@ export default function Page() {
           <img
             src="/images/students_and_campus.jpg"
             alt="Students studying abroad"
-            className="w-full h-[420px] object-cover rounded-3xl shadow-2xl"
+            className="w-full h-[420px] object-cover rounded-3xl shadow-2xl hover:scale-[1.02] transition duration-500"
           />
       
           <div className="absolute bottom-6 left-6 bg-white/95 backdrop-blur p-5 rounded-2xl shadow-2xl max-w-sm border border-slate-100">
