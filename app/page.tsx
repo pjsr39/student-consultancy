@@ -30,10 +30,10 @@ export default function Page() {
           <img
             src="/images/college_campus.jpg"
             alt="European campus background"
-            className="absolute inset-0 w-full h-full object-cover opacity-[0.16] pointer-events-none"
+            className="absolute inset-0 w-full h-full object-cover opacity-[0.50] pointer-events-none"
           />
 
-        <div className="absolute inset-0 bg-white/75 pointer-events-none"></div>
+        <div className="absolute inset-0 bg-white/55 pointer-events-none"></div>
         
         <div className="relative z-10">
           <p className="text-sky-600 font-semibold mb-3">
