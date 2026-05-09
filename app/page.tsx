@@ -26,11 +26,11 @@ export default function Page() {
         <div className="bg-gradient-to-br from-cyan-50 via-white to-blue-50 border border-cyan-100 rounded-3xl p-6 shadow-lg">
       
           <p className="text-cyan-500 font-semibold mb-3">
-            For students planning Master&apos;s abroad
+            Your international education partner
           </p>
       
           <h2 className="text-4xl md:text-[48px] font-bold leading-tight text-slate-900">
-            Plan Your Master&apos;s Abroad With Confidence
+            Study Abroad Made Simple
           </h2>
       
           <p className="mt-5 text-slate-600 text-lg leading-relaxed">
