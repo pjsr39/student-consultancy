@@ -20,7 +20,7 @@ export default function Page() {
       </header>
 
       {/* HERO */}
-      <section className="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+      <section className="max-w-6xl mx-auto px-6 py-14 grid md:grid-cols-2 gap-12 items-center">
         <div>
           <p className="text-cyan-400 font-medium mb-3">
             For students planning Master&apos;s abroad
@@ -116,7 +116,7 @@ export default function Page() {
       </section>
 
       {/* SERVICES */}
-      <section id="services" className="max-w-6xl mx-auto px-6 py-20">
+      <section id="services" className="max-w-6xl mx-auto px-6 py-14">
         <p className="text-cyan-400 font-medium mb-2">Our Services</p>
         <h2 className="text-3xl font-semibold mb-10">
           Complete Support for Your Master&apos;s Application
@@ -174,7 +174,7 @@ export default function Page() {
 
       {/* COUNTRIES */}
       <section id="countries" className="bg-slate-50 border-y border-slate-200">
-        <div className="max-w-6xl mx-auto px-6 py-20">
+        <div className="max-w-6xl mx-auto px-6 py-14">
           <p className="text-cyan-400 font-medium mb-2">Study Destinations</p>
 
           <h2 className="text-3xl font-semibold mb-4">
@@ -206,7 +206,7 @@ export default function Page() {
       </section>
 
       {/* PROCESS */}
-      <section id="process" className="max-w-6xl mx-auto px-6 py-20">
+      <section id="process" className="max-w-6xl mx-auto px-6 py-14">
         <p className="text-cyan-400 font-medium mb-2">Step-by-Step Process</p>
 
         <h2 className="text-3xl font-semibold mb-10">
@@ -251,7 +251,7 @@ export default function Page() {
       </section>
 
       {/* WHY CHOOSE US */}
-      <section className="max-w-6xl mx-auto px-6 py-20">
+      <section className="max-w-6xl mx-auto px-6 py-14">
         <div className="grid md:grid-cols-2 gap-10 items-center">
           <div className="bg-gradient-to-br from-cyan-400/20 to-blue-500/20 rounded-2xl h-80 flex items-center justify-center text-slate-600 border border-slate-200">
             Add Student / University Photo Here
@@ -281,7 +281,7 @@ export default function Page() {
 
       {/* FAQ */}
       <section id="faq" className="bg-slate-50 border-y border-slate-200">
-        <div className="max-w-4xl mx-auto px-6 py-20">
+        <div className="max-w-4xl mx-auto px-6 py-14">
           <p className="text-cyan-400 font-medium mb-2">FAQ</p>
 
           <h2 className="text-3xl font-semibold mb-10">
@@ -323,7 +323,7 @@ export default function Page() {
       </section>
 
       {/* CONTACT FORM */}
-      <section id="contact" className="max-w-4xl mx-auto px-6 py-20">
+      <section id="contact" className="max-w-4xl mx-auto px-6 py-14">
         <div className="border border-slate-200 bg-slate-50 rounded-2xl p-8">
           <p className="text-cyan-400 font-medium mb-2">Get Started</p>
 
