@@ -26,13 +26,17 @@ export default function Page() {
       <section className="max-w-[1700px] mx-auto px-8 py-10 grid md:grid-cols-2 gap-12 items-center">
       
         {/* LEFT CONTENT */}
+        {/*
         <div className="relative overflow-hidden bg-gradient-to-br from-[#eef6ff] via-[#f4f9ff] to-[#dbeafe] border border-slate-200 rounded-3xl p-6 shadow-xl hover:-translate-y-1 hover:shadow-2xl transition duration-300">
+        */}
+          <div className="relative overflow-hidden bg-white border border-slate-200 rounded-3xl p-6 shadow-xl hover:-translate-y-1 hover:shadow-2xl transition duration-300">
+          {/*
           <img
             src="/images/college_campus.jpg"
             alt="European campus background"
             className="absolute inset-0 w-full h-full object-cover opacity-[0.50] pointer-events-none"
           />
-
+        */}
         <div className="absolute inset-0 bg-white/55 pointer-events-none"></div>
         
         <div className="relative z-10">
