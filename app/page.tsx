@@ -1,6 +1,36 @@
 'use client'
 
+import { useEffect, useState } from 'react'
+
 export default function Page() {
+  const cards = [
+    {
+      title: "Choose the Right Program",
+      text: "Find Master's programs that match your academic profile and career goals.",
+      image: "/images/choose_the_right_program.jpg"
+    },
+    {
+      title: "Prepare Strong Documents",
+      text: "Improve your SOP, CV, and application documents before submission.",
+      image: "/images/prepare_strong_documents.png"
+    },
+    {
+      title: "Move Abroad Smoothly",
+      text: "Get guidance for visa, accommodation, travel, and student life.",
+      image: "/images/move_abroad_smoothly.jpg"
+    }
+  ]
+
+  const [activeCard, setActiveCard] = useState(0)
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActiveCard((prev) => (prev + 1) % cards.length)
+    }, 2000)
+
+    return () => clearInterval(timer)
+  }, [cards.length])
+
   return (
     <main className="min-h-screen bg-white text-slate-900">
 
@@ -25,22 +55,22 @@ export default function Page() {
       {/* HERO */}
       <section className="bg-slate-100">
         <div className="max-w-[1700px] mx-auto px-8 py-10 grid md:grid-cols-2 gap-12 items-center">
-      
+
           {/* LEFT CONTENT */}
           <div className="max-w-3xl">
             <p className="text-sky-600 font-semibold mb-4">
               Your international education partner
             </p>
-      
+
             <h2 className="text-4xl md:text-[42px] font-extrabold leading-tight text-slate-900">
               Study Abroad Made Simple
             </h2>
-      
+
             <p className="mt-6 text-slate-700 text-xl leading-relaxed">
               Get expert guidance for university shortlisting, Master&apos;s applications,
               SOP, CV, scholarships, visa preparation, and your smooth move abroad.
             </p>
-      
+
             <div className="mt-8 flex flex-wrap gap-4">
               <a
                 href="#contact"
@@ -48,7 +78,7 @@ export default function Page() {
               >
                 Book Free Consultation
               </a>
-      
+
               <a
                 href="#services"
                 className="bg-white hover:bg-slate-50 text-slate-900 border border-slate-300 px-7 py-4 rounded-full font-semibold shadow-sm transition duration-300"
@@ -56,65 +86,46 @@ export default function Page() {
                 Explore Services
               </a>
             </div>
-      
+
             <div className="mt-8 flex flex-wrap gap-5 text-sm text-slate-600">
               <span>✔ Europe-focused guidance</span>
               <span>✔ Scholarship & SOP support</span>
               <span>✔ Visa & relocation assistance</span>
             </div>
           </div>
-      
-          {/* RIGHT IMAGE */}
-          <div className="relative flex justify-end">
-            <div className="absolute right-0 top-6 w-[70%] h-[80%] bg-sky-500 rounded-l-[120px] rounded-tr-[40px]"></div>
-      
-            <img
-              src="/images/students_and_campus.jpg"
-              alt="Students studying abroad"
-              className="relative z-10 w-full max-w-[720px] h-[420px] object-cover rounded-3xl shadow-2xl"
-            />
-          </div>
-      
-        </div>
-      </section>
 
-      {/* IMAGE STRIP */}
-      <section className="max-w-[1500px] mx-auto px-6 pb-16">
-        <div className="grid md:grid-cols-3 gap-6">
-          {[
-            {
-              title: "Choose the Right Program",
-              text: "Find Master's programs that match your academic profile and career goals.",
-              image: "/images/choose_the_right_program.jpg"
-            },
-            {
-              title: "Prepare Strong Documents",
-              text: "Improve your SOP, CV, and application documents before submission.",
-              image: "/images/prepare_strong_documents.png"
-            },
-            {
-              title: "Move Abroad Smoothly",
-              text: "Get guidance for visa, accommodation, travel, and student life.",
-              image: "/images/move_abroad_smoothly.jpg"
-            }
-          ].map((item) => (
-            <div
-              key={item.title}
-              className="bg-white border border-slate-200 rounded-2xl p-6 hover:shadow-xl hover:-translate-y-1 transition duration-300"
-            >
+          {/* RIGHT SIDE CARD CAROUSEL */}
+          <div className="relative flex flex-col items-center justify-center h-[420px]">
+            <div className="bg-white border border-slate-200 rounded-3xl shadow-2xl p-6 w-full max-w-[560px] transition-all duration-700">
               <img
-                src={item.image}
-                alt={item.title}
-                className="h-40 w-full object-cover rounded-xl mb-5"
+                src={cards[activeCard].image}
+                alt={cards[activeCard].title}
+                className="h-56 w-full object-cover rounded-2xl mb-6 transition-all duration-700"
               />
-      
-              <h3 className="text-lg font-semibold">{item.title}</h3>
-      
-              <p className="mt-2 text-sm text-slate-600">
-                {item.text}
+
+              <h3 className="text-2xl font-bold text-slate-900">
+                {cards[activeCard].title}
+              </h3>
+
+              <p className="mt-3 text-slate-600 text-lg">
+                {cards[activeCard].text}
               </p>
             </div>
-          ))}
+
+            {/* DOTS */}
+            <div className="mt-6 flex gap-3">
+              {cards.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setActiveCard(index)}
+                  className={`w-3 h-3 rounded-full transition duration-300 ${
+                    activeCard === index ? "bg-sky-600 scale-125" : "bg-slate-300"
+                  }`}
+                />
+              ))}
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -244,10 +255,7 @@ export default function Page() {
                 {item.step}
               </div>
               <h3 className="font-semibold text-lg">{item.title}</h3>
-              <p
-                className="mt-2 text-slate-600"
-                dangerouslySetInnerHTML={{ __html: item.text }}
-              />
+              <p className="mt-2 text-slate-600">{item.text}</p>
             </div>
           ))}
         </div>
@@ -311,14 +319,8 @@ export default function Page() {
               }
             ].map((faq) => (
               <div key={faq.q} className="bg-white/70 border border-slate-200 rounded-xl p-6">
-                <h3
-                  className="font-semibold"
-                  dangerouslySetInnerHTML={{ __html: faq.q }}
-                />
-                <p
-                  className="mt-2 text-slate-600 text-sm"
-                  dangerouslySetInnerHTML={{ __html: faq.a }}
-                />
+                <h3 className="font-semibold">{faq.q}</h3>
+                <p className="mt-2 text-slate-600 text-sm">{faq.a}</p>
               </div>
             ))}
           </div>
