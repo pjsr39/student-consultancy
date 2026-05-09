@@ -96,22 +96,23 @@ export default function Page() {
 
           {/* RIGHT SIDE CARD CAROUSEL */}
           <div className="relative flex flex-col items-center justify-center h-[420px]">
-            <div className="bg-white border border-slate-200 rounded-3xl shadow-2xl p-6 w-full max-w-[560px] transition-all duration-700">
+            <div className="bg-white border border-slate-200 rounded-3xl shadow-2xl p-6 w-full max-w-[560px] h-[410px] transition-all duration-700 overflow-hidden">
               <img
                 src={cards[activeCard].image}
                 alt={cards[activeCard].title}
-                className="h-56 w-full object-cover rounded-2xl mb-6 transition-all duration-700"
+                className="h-56 w-full object-cover rounded-2xl mb-6"
               />
-
-              <h3 className="text-2xl font-bold text-slate-900">
-                {cards[activeCard].title}
-              </h3>
-
-              <p className="mt-3 text-slate-600 text-lg">
-                {cards[activeCard].text}
-              </p>
+            
+              <div className="min-h-[110px]">
+                <h3 className="text-2xl font-bold text-slate-900">
+                  {cards[activeCard].title}
+                </h3>
+            
+                <p className="mt-3 text-slate-600 text-lg leading-relaxed">
+                  {cards[activeCard].text}
+                </p>
+              </div>
             </div>
-
             {/* DOTS */}
             <div className="mt-6 flex gap-3">
               {cards.map((_, index) => (
